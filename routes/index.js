@@ -4,6 +4,5 @@
  */
 
 exports.index = function(req, res){
-    console.log(req.query, req.body);
-    res.render('index', { title: 'Express', foo: 'Hello, world!' })
+    res.render('index', { title: 'Express', foo: 'Hello, world!', query: req.query, body: req.body })
 };

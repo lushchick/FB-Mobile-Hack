@@ -1,3 +1,11 @@
 h1= title
 p Welcome to #{title}
 p= foo
+<pre>
+- each val, key in query
+    #{key}=#{val}
+</pre>
+<pre>
+- each val, key in body
+    #{key}=#{val}
+</pre>
