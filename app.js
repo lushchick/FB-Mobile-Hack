@@ -6,6 +6,7 @@
 var express = require('express')
   , routes = require('./routes')
   , fbsdk = require('facebook-sdk')
+  , redis = require('redis-url')
 
 var app = module.exports = express.createServer();
 
